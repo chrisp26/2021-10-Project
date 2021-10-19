@@ -1,0 +1,79 @@
+##############
+Scrape Data
+##############
+- DONE Get cars data and store in Mongo DB 
+- DONE Save script as a Python script and incorporate all the data cleanup into the scraping for-loop
+- Use functions to do this
+
+
+##############
+Get Census Data
+##############
+SCRAPPED - See what values are available
+SCRAPPED - See what suburbs/regions are available
+SCRAPPED - Store data in Mongo DB
+
+##############
+Generate Vehicle Suburb Data
+##############
+DONE - Avg vehicle price
+DONE - Avg vehicle age
+- Median vehicle price
+DONE - # vehicles for sale
+- Store this in Mongo DB Collection
+
+
+##############
+Create suburb Collection
+##############
+DONE - Suburb name
+N/A - State
+DONE - State abbreviation
+DONE - Postcode
+N/A - Locality
+DONE - Latitude
+DONE - Longitude
+
+##############
+Create JSON with all relevant information combined
+##############
+DONE - Vehicle suburb data
+SCRAPPED - Cencus suburb data
+DONE - Suburb data
+DONE - ABS tax data
+
+
+##############
+Create HTML file
+##############
+- Head
+- Body
+- Footer
+
+##############
+Creat javascript file
+##############
+- Create graph in Plotly or D3
+- Create dynamic axis
+
+##############
+Create CSS file
+##############
+
+
+##############
+Publish through Github Pages
+##############
+
+
+
+-------------------------------
+QUESTIONS
+-------------------------------
+
+1. In scrape_store_AU_vehicle_listing_data how do I create functions to use in the for loop?
+2. What is the best format to store 'statistics' data?
+
+
+Store these SQL - dataframe Leftjoin 
+- State, Suburb, Avg_price, Med_income, Veh_age, Veh_kms

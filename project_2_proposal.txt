@@ -1,0 +1,59 @@
++---------------------------+----------------------------+
+| PROJECT 2: Chris Penn					 |
+|--------------------------------------------------------|
+| An interactive visualisation overlaying vehicle ad data|
+| with selected 2016 cencus data.                        |
++--------------------------+-----------------------------+
+
++---------------------------+----------------------------+
+|Overview						 |					
++---------------------------+----------------------------+
+Using private-party vehicle listings from a website
+such as Gumtree or CarsGuide and data from the 2016
+Cencus, plot datato an interactive map which allows the
+user to investigate any visual correlations.	
+
++---------------------------+----------------------------+
+|Potential data sources					 |
++---------------------------+----------------------------+
++ Gumtree Cars (scraped)
++ CarsGuide (scraped)
++ ABS website (downloaded)
++ GEOJSON file (supplied)
++ Google maps API (tbc)
+
++---------------------------+----------------------------+
+|Technologies						 |
++---------------------------+----------------------------+
++ Python
++ Beautiful Soup, Splinter (scraping)
++ Pandas (data transformation)
++ Flask (data delivery)
++ HTML, CSS, Javascript (web rendering/delivery)
++ GitHub (version control & web hosting)
++ Leaflet & Mapbox (mapping)
++ MongoDB or SQL (storing data)
+
++---------------------------+----------------------------+
+|Potential data to be displayed on map			 |
++---------------------------+----------------------------+
+grouped by suburb, LGA or State Suburbs
+--
+*Vehicle listing data*
++ Mean/median listing price
++ Mean/median listing KM
++ Mean/median listing Age
++ Total number of listings
++ Most popular body type
+
+*Cencus data*
++ Median household income
++ Frequency of age bands
+
+
++---------------------------+----------------------------+
+|Alternative data display				 |
++---------------------------+----------------------------+
+These variables plotted on a D3 scatterplot with 
+interactive/variable axis and data plots. Similar to D3
+homework.

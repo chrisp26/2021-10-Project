@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comparisons Page</title>
+
+  <!-- Bootstrap CDN -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+  <link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+  <link rel="css/stylesheet" href="style.css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body class = 'bod-background' style="padding-top: 70px">
+<!--Navigation bar-->
+<nav class="navbar fixed-top navbar-expand-lg menu_nav"> <a class="navbar-brand heavy-brand" href="index.html">Cars</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+	  <div class="collapse navbar-collapse navbar-right" id="navbarSupportedContent1">
+<!--	    Menu Items-->
+	    <ul class="navbar-nav ml-auto">
+	      
+<!--
+			<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle pink-text" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Plots </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> 
+				<a class="dropdown-item" href="comparisons.html">Comparisons by State</a> 
+				<a class="dropdown-item" href="humidity.html">Humidity</a>
+				<a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+				<a class="dropdown-item" href="wind-speed.html">Wind Speed</a>
+-->
+         	</li>
+			
+		  	<li class="nav-item active "> <a class="nav-link pink-text" href="comparisons.html">Comparisons <span class="sr-only">(current)</span></a> </li>
+			
+<!--	      	<li class="nav-item"> <a class="nav-link pink-text" href="#">Data</a> </li>-->
+	      
+        </ul>
+	    
+  </div>
+</nav>
+
+<!--Content-->
+<!--Create a grid-->
+	<div class="container">
+		<div class = "row">
+
+			
+			<div class = "col-lg-12 col-md-12">
+<!--right box-->
+				 <div class="body-box">
+					<h2>Comparisons: by state</h2>
+					<hr>
+					<div class="container">
+					 <div class="row">
+					 	<div class="col-9" style="padding-bottom: 40px">
+						  <p align="center">Avg. Vehicle Price vs Avg. Taxable Income</p>
+			<a>
+		 	<img src="../../../Images/graphs/state_veh_price_vs_tincome.png" alt="plot graph vs temperature" width="800" class="side-images">
+			</a>
+						 </div>
+						 
+						 <div class="col-3" align="center" style="padding-bottom: 40px; padding-top:5px">
+						   <h4 class="title">Comments</h4>
+							 <br>
+						   <p>In this first graph our school teacher friend is kindly pointing out the lack of correlation between these variables. Throughout these graphs, the bubble size reflects the number of cars listed for sale.</p>
+						   <p>It is worth noting that in the NT vehicle prices are the second highest despite it having the lowest average taxable incomes.</p>
+							<p>Overall, this graph does not help us establish a link between vehicle prices and incomes.&nbsp;</p>
+                         </div>
+						 <br>
+						 <hr>
+<!--						 Row 2-->
+					   <div class="col-3 backgroundCol" align="center" style="padding-bottom: 40px; padding-top: 20px; backgroundCol">
+							 <h4 class="title">Let's look at some tax returns</h4>
+							 <br>
+						   <p>When we introduce the average amount claimed by each person for car related expenses, we suddenly see a correlation with car prices. Makes sense.</p>
+						   <p>&nbsp;When running some regression analysis the R<sup>2</sup> value comes back at .3994 indicating a weak correlation.</p>
+							<p>There are too many other variables which would need to be factored in to form a conclusive opinion about this relationship; but this result suggest further investigation may be justified. &nbsp;</p>
+					   </div>
+						 
+					   <div class="col-9 backgroundCol" style="padding-bottom: 40px; padding-top:10px ">
+					     <p class="title backgroundCol text-center" style="padding-top: 20px">Avg. Vehicle Price vs Avg. Work Related Car Expense</p>
+<img src="../../../Images/graphs/state_veh_price_vs_work_car_exp.png" alt="plot graph vs wind speed" width="800" class="side-images backgroundCol float-left img-fluid"> </div>
+<!--						 Row 3-->
+					 </div>
+					 <div class="row">
+					   <div class="col-9" style="padding-bottom: 40px; padding-top: 40px">
+						 <p align="center">Avg. Vehicle Price vs Avg. Taxable Income</p>
+<img src="../../../Images/graphs/price_v_age.png" alt="plot graph vs temperature" width="800" class="side-images"> </div>
+					   <div class="col-3" align="center" style="padding-bottom: 40px; padding-top: 40px">
+						   <h4 class="title">How about vehicle age?</h4>
+							 <br>
+						   <p>As our helpful young data professionals are pointing out, there is a moderate to strong correlation between the age of vehicles for sale, and the avg. price of  vehicles in those states.</p>
+						   <p>NSW vehicles are about the same average age as WA, VIC and QLD, but seem to be priced higher.</p>
+							<p>The ACT has the youngest vehicles listed for sale which may be due to former Government owned vehicles entering the supply.</p>
+                       </div>
+						 <br>
+				      </div>
+<!--						Row 5-->
+					 <div class="row">
+					   <div class="col-3 backgroundCol" style="padding-bottom: 40px; padding-top: 40px">
+						   <h4 class="title">We'll keep looking</h4>
+							 <br>
+						   <p>Perhaps there is a stronger correlation between vehicle age and avg. income?</p>
+						   <p>Nope.</p>
+							<p>That stock image doesn't look very corporatey either.</p>
+					   </div>
+					   
+						<div class="col-9 backgroundCol" align="center" style="padding-bottom: 40px; padding-top: 40px">
+						  <p class="title backgroundCol text-center" style="padding-top: 20px">Avg. Vehicle Age vs Avg. Taxable Income</p>
+<img src="../../../Images/graphs/strate_age_v_taxable_income.png" alt="plot graph vs wind speed" width="974" class="side-images backgroundCol float-left img-fluid">
+					     
+						 </div>
+				      
+
+				 	</div>
+						<div>
+							<h1 align="center"><a href="d3-chart.html">Hang on... these charts aren't interactive</a></h1>
+							</div>
+				</div>			
+			
+			</div>
+		
+		
+	</div>
+
+<!--END-->
+	
+
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-4.4.1.js"></script>
+</body>

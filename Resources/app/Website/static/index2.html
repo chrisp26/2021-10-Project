@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Vehicle Listings Statistics</title>
+
+  <!-- Bootstrap CDN -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+  <link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class = 'bod-background' style="padding-top: 70px">
+<!--Navigation bar-->
+<nav class="navbar fixed-top navbar-expand-lg menu_nav"> <a class="navbar-brand heavy-brand" href="index.html">Home</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+	  <div class="collapse navbar-collapse navbar-right" id="navbarSupportedContent1">
+<!--	    Menu Items-->
+	    <ul class="navbar-nav ml-auto">
+	      
+			<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle pink-text" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Plots </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> 
+				<a class="dropdown-item" href="temperature.html">Max Temperature</a> 
+				<a class="dropdown-item" href="humidity.html">Humidity</a>
+				<a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+				<a class="dropdown-item" href="wind-speed.html">Wind Speed</a>
+         	</li>
+			
+		  	<li class="nav-item active "> <a class="nav-link pink-text" href="comparisons.html">Comparisons <span class="sr-only">(current)</span></a> </li>
+			
+	      	<li class="nav-item"> <a class="nav-link pink-text" href="data.html">Data</a> </li>
+	      
+        </ul>
+	    
+  </div>
+</nav>
+
+<!--Content-->
+<!--Create a grid-->
+	<div class="container">
+		<div class = "row">
+			<div class = "col-lg-8 col-md-12">
+<!--left box-->
+			  <div class="body-box">
+					<h2>Overview</h2>
+					<hr>
+				 <img src ="../../../Images/Pointing_people/414-4144661_man-pointing-png-man-pointing-finger-png-transparent.png" alt="guy pointing" width="200"  class="img-fluid alert float-right" id="img-size">
+			    <span class="para">The goal of this project is to investigate and compare any correlations between used vehicles listings and financial data from the ATO. I want to see if the income within an Australian suburb leads to higher prices on used vehicles.
+					<br>
+					<br>
+					Easy.
+			   		 <br>
+				     <br>
+				    <br>
+				    <strong>Data Sources</strong>
+				    <br>
+					<ol>
+						<li><a href="/scraped-data">Vehicle listings scrapped from carsguide.com.au</a></li>
+						<li><a href="tax-data">2016 Tax data downloaded from the ATO website&nbsp;</a></li>
+					</ol>
+			       	 <br>
+				     <br>
+				    <br>
+				    <br>
+				    <h2>How I thought I was going to do things...</h2>
+				    <br>
+				    <ol>
+					    <li>Scrape carsguide website and store data in a Mongo database</li>
+					    <li>Cross reference the above with ABN data and create collections of objects containing data on each suburb.</li>
+					    <li>Use D3 and Leaflet to throw it all into an interactive graph allowing the user to plot different data sets and view any relationships.</li>
+			        </ol>
+				    <br>
+				    <br>
+				    <br>
+				    <br>
+				    <h2>What actually happened...</h2>
+						 <img src ="../../../Images/Pointing_people/business-person-thinking-26586667.jpg" alt="Latitude vs x" width="250"  class="img-fluid alert float-left" id="img-size">
+				    <br>
+				    <ol>
+					    <li>Scraped carsguide website....</li>
+						<br>
+					    <li>All other plans went out the window and I decided to 'pivot'</li>
+					    <li>Ended up with a website showing some graphs along with corporate stock images (complete with iStock watermarks)</li>
+			        </ol>
+					<br>
+					<br>
+					<br>
+					<h1><a href="/page-2">Next &gt;</a></h1>
+				    </span>
+                </div>
+			</div>
+			
+			<div class = "col-lg-4 col-md-12">
+  <!--right box-->
+			  <div class="body-box">
+					<h2>Visualisations</h2>
+					<hr>
+					<div class="container">
+					 <div class="row">
+					 	<div class="col-6">
+							<a href="temperature.html">
+						 	<img class="side-images" src="Resources/assets/images/Fig1.png" alt="showing some graph of something">
+							</a>
+						 </div>
+						 
+						 <div class="col-6">
+							<a href="humidity.html">
+						 	<img class="side-images" src="Resources/assets/images/Fig3.png" alt="showing some graph of something">
+							</a>
+						 </div>
+						 
+						 <div class="col-6">
+							<a href="cloudiness.html">
+						 	<img class="side-images" src="Resources/assets/images/Fig4.png" alt="showing some graph of something">
+							</a>
+						 </div>
+						 
+						 <div class="col-6">
+							<a href=wind-speed.html>
+						 	<img class="side-images" src="Resources/assets/images/Fig2.png" alt="showing some graph of something">
+							</a>
+						 </div>
+						 
+					 </div>
+				 	</div>
+				</div>			
+			
+			</div>
+		
+		
+	</div>
+
+<!--END-->
+	
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-4.4.1.js"></script>
+</body>
